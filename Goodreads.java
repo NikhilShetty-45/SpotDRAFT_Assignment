@@ -17,8 +17,8 @@ public class Goodreads {
 		driver.manage().window().maximize();
 		driver.findElement(By.linkText("Sign In")).click();
 		driver.findElement(By.xpath( "//button[@class='gr-button gr-button--dark gr-button--auth authPortalConnectButton authPortalSignInButton']")).click();
-		driver.findElement(By.id("ap_email")).sendKeys("shettynikhil56@gmail.com");
-		driver.findElement(By.id("ap_password")).sendKeys("Nikhil@45");
+		driver.findElement(By.id("ap_email")).sendKeys("your email");
+		driver.findElement(By.id("ap_password")).sendKeys("your password");
 		driver.findElement(By.id("signInSubmit")).click();
 		
 		//2) Search for Jungle book
