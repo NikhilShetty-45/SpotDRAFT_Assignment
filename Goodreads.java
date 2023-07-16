@@ -28,14 +28,14 @@ public class Goodreads {
 		//3) Mark the Book as "want to read"
 		driver.findElement(By.xpath( "//button[@class='wtrToRead']")).click();
 		
-		//Remove the selected book
+		//4) Remove the selected book
 		driver.findElement(By.linkText("My Books")).click();
 		driver.navigate().refresh();
 		driver.findElement(By.xpath( "//img[@alt='Remove from my books']")).click();
 		Alert alert =  driver.switchTo().alert();
 		alert.accept();
 		
-		//Logout of Website
+		//5) Logout of Website
 		driver.findElement(By.xpath( "//img[@alt='Nikhil']")).click();
 		driver.findElement(By.linkText("Sign out")).click();
 		driver.quit();
